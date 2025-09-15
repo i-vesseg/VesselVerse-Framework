@@ -1,0 +1,61 @@
+# Global STAPLE parameters (used as defaults)
+staple:
+  force_recompute: false
+  confidence_threshold: 0.8
+  preprocessing:
+    do_preprocessing: true
+    do_adaptive_thresholding: true
+    do_vessel_enhancement: true
+
+# Modality-specific parameters
+modalities:
+  CT:
+    confidence_threshold: 0.85
+    preprocessing:
+      vessel_radius_mm: 0.8
+      min_vessel_length_mm: 4.0
+      
+  MR:
+    confidence_threshold: 0.75
+    preprocessing:
+      vessel_radius_mm: 1.0
+      min_vessel_length_mm: 5.0
+
+# Year-specific parameters for TOPCOW
+years:
+  "2023":
+    preprocessing:
+      do_vessel_enhancement: true
+      enhancement_scale: 1.0
+      
+  "2024":
+    preprocessing:
+      do_vessel_enhancement: true
+      enhancement_scale: 1.2
+
+# Dataset-specific parameters (override all others)
+datasets:
+  IXI:
+    confidence_threshold: 0.75
+    preprocessing:
+      do_preprocessing: true
+      do_adaptive_thresholding: true
+      do_vessel_enhancement: true
+      vessel_radius_mm: 1.0
+      min_vessel_length_mm: 5.0
+      
+  # 301_CT23:
+  #   preprocessing:
+  #     specific_parameter: value1
+      
+  # 302_MR23:
+  #   preprocessing:
+  #     specific_parameter: value2
+      
+  # 303_CT24:
+  #   preprocessing:
+  #     specific_parameter: value3
+      
+  # 304_MR24:
+  #   preprocessing:
+  #     specific_parameter: value4
