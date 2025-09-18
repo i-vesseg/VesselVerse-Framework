@@ -25,8 +25,8 @@ A collaborative framework designed to incrementally improve ANY type of medical 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/vesselverse.git
-cd vesselverse
+git clone https://github.com/i-vesseg/VesselVerse-Framework.git
+cd VesselVerse-Framework
 ```
 
 ### 2. Set Up the Data Directory Structure
