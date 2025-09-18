@@ -40,10 +40,11 @@ mkdir -p data/{IXI_TOT,STAPLE,StochasticAL,nnUNet,A2V,Filtering,ExpertAnnotation
 1. Open 3D Slicer
 2. Go to *Edit* → *Application Settings*
 3. Click on *Modules*
-4. Add the path to the VesselVerse extension directory:
+4. Add the VesselVerse extension directory:
    ```
-   /path/to/vesselverse/src/slicer_extension/VesselVerse
+   /path/to/Vesselverse-Framework/src/slicer_extension/VesselVerse
    ```
+   to the additional module paths (drag & drop).
 
 #### Method B: Manual Installation
 1. Copy the VesselVerse extension to Slicer's extension directory:
